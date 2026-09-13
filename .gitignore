@@ -1,0 +1,28 @@
+# Build and Executable files
+*.o
+*.out
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# Build Directories
+build/
+bin/
+obj/
+x64/
+x86/
+
+# IDE and Editor files
+.vscode/
+.vs/
+.idea/
+*.suo
+*.user
+
+# Libraries and Archives
+*.a
+*.lib
+*.so
+*.dll
+*.dylib

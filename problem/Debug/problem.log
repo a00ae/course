@@ -1,3 +1,5 @@
-﻿  main.cpp
-D:\Cpp\prooblem-cr8\problem\main.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+﻿  fun.cpp
+  main.cpp
+  problem11.cpp
+  Generating Code...
   problem.vcxproj -> D:\Cpp\prooblem-cr8\Debug\problem.exe

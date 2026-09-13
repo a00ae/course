@@ -13,14 +13,26 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\course-8">
+      <UniqueIdentifier>{c86bbee1-3eab-468d-8e5e-d12220606fa7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="problem.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="problem11.cpp">
+      <Filter>Source Files\course-8</Filter>
+    </ClCompile>
+    <ClCompile Include="fun.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fun.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

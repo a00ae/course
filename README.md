@@ -66,13 +66,10 @@ The course features two end-to-end projects integrating core data structures, al
 ### 1. Open the project in Visual Studio or VS Code.
 
 ### 2. Compile and execute the desired target:
-
-    ```bash
-    Bush
-
+```bash
     g++ main.cpp -o main
     ./main
-    ```
+```
 
 ## 🎯 Learning Objectives
 

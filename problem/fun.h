@@ -8,8 +8,8 @@ namespace fun {
 	short ReadMonth();
 	short ReadDay();
 
-	short NumberOfDeasInAMonth(short month, short year);
+	short NumberOfDaysInAMonth(short month, short year);
 
-
+	short NumberOfDaysFromTheBeginingOfTheYear(short day, short month, short year);
 
 }

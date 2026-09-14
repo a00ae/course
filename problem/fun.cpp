@@ -11,7 +11,7 @@ namespace fun {
 		return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 	}
 
-	short NumberOfDeasInAMonth(short month, short year) {
+	short NumberOfDaysInAMonth(short month, short year) {
 
 		if (month < 1 || month > 12)
 			return 0;
@@ -41,5 +41,18 @@ namespace fun {
 		cout << "Enter a Day? ";
 		cin >> day;
 		return day;
+	}
+
+	short NumberOfDaysFromTheBeginingOfTheYear(short day, short month, short year) {
+
+		short TotalDeas = 0;
+
+		for (int i = 0; i < month; i++) {
+			TotalDeas += NumberOfDaysInAMonth(i, year);
+		}
+
+		TotalDeas += day;
+
+		return TotalDeas;
 	}
 }

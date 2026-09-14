@@ -5,29 +5,60 @@
 using namespace std;
 using namespace fun;
 
+struct stDate {
+	short Day;
+	short Month;
+	short Year;
+};
 
-short NumberOfDaysFromTheBeginingOfTheYear(short day, short month, short year) {
+stDate GetDataFromDeasInYear(short DaysOrderInYear, short year) {
 
-	short TotalDeas = 0;
+	stDate Date;
+	short RemainingDays = DaysOrderInYear;
+	short MonthDeys = 0;
 
-	for (int i = 0; i < month; i++) {
-		TotalDeas += NumberOfDeasInAMonth(i, year);
+	Date.Year = year;
+	Date.Month = 1;
+
+	while (true) {
+		MonthDeys = NumberOfDaysInAMonth(Date.Month, year);
+		if (RemainingDays > MonthDeys) {
+			RemainingDays -= MonthDeys;
+			Date.Month++;
+		}
+		else {
+			Date.Day = RemainingDays;
+			break;
+		}
+
 	}
 
-	TotalDeas += day;
+	return Date;
 
-	return TotalDeas;
+
+
 }
 
-
 void problem11() {
-
 	short day = ReadDay();
 	short month = ReadMonth();
 	short year = ReadYear();
 
+	short DaysOrderInYear = NumberOfDaysFromTheBeginingOfTheYear(day, month, year);
 
-	cout << "\nNumber of Days from the begining of the year is " 
-		<< NumberOfDaysFromTheBeginingOfTheYear(day, month, year);
-	
+
+	cout << "\nNumber of Days from the begining of the year is "
+		<< DaysOrderInYear << "\n\n";
+
+
+	stDate Date;
+	Date = GetDataFromDeasInYear(DaysOrderInYear, year);
+
+
+	cout << "Date for [" << DaysOrderInYear << "] is: ";
+	cout << Date.Day << "/" << Date.Month << "/" << Date.Year;
+
+
+
+
 }

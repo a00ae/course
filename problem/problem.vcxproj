@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="fun.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="problem10.cpp" />
     <ClCompile Include="problem11.cpp" />
   </ItemGroup>
   <ItemGroup>

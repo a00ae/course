@@ -2,6 +2,7 @@
 #define	PROBLEM_H
 
 
+void problem10();
 void problem11();
 void problem12();
 void problem13();

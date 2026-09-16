@@ -5,6 +5,9 @@
 using namespace std;
 
 namespace fun {
+
+
+	//function
 	bool isLeapYear(short year) {
 
 
@@ -55,4 +58,6 @@ namespace fun {
 
 		return TotalDeas;
 	}
+
+
 }

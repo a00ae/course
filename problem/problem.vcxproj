@@ -146,6 +146,7 @@
     <ClCompile Include="problem12.cpp" />
     <ClCompile Include="problem13.cpp" />
     <ClCompile Include="problem14.cpp" />
+    <ClCompile Include="problem15.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fun.h" />

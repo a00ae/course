@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    problem19();
+    problem20To32();
   
 }
 

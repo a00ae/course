@@ -12,7 +12,9 @@ void problem16();
 void problem17();
 void problem18();
 void problem19();
-void problem20();
+
+
+void problem20To32();
 
 
 

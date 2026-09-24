@@ -1,3 +1,4 @@
+//#pragma warning(disable : 4996)
 //#include <iostream>
 //#include "fun.h"
 //
@@ -5,12 +6,10 @@
 //using namespace fun;
 //
 //struct stDate {
-//	short Year;
-//	short Month;
 //	short Day;
+//	short Month;
+//	short Year;
 //};
-//
-//
 //
 //bool IsDate1BeforeDate2(stDate Date1, stDate Date2)
 //{
@@ -19,14 +18,19 @@
 //			Date2.Month ? Date1.Day < Date2.Day : false)) : false);
 //}
 //
-//bool IsLastDayInMonth(stDate Date) {
-//	return (Date.Day == NumberOfDaysInAMonth(Date.Month, Date.Year));
+//
+//bool IsLastDayInMonth(stDate Date)
+//{
+//	return (Date.Day == NumberOfDaysInAMonth(Date.Month,
+//		Date.Year));
 //}
-//
-//bool IsLastMonthInYear(short Month) {
-//
+//bool IsLastMonthInYear(short Month)
+//{
 //	return (Month == 12);
 //}
+//
+//
+//
 //
 //stDate IncreaseDateByOneDay(stDate Date) {
 //
@@ -69,7 +73,6 @@
 //
 //}
 //
-//
 //stDate ReadFullDate() {
 //	stDate Date;
 //
@@ -79,19 +82,45 @@
 //
 //
 //	return Date;
+//}
+//
+//
+//
+//
+//
+////problem 18
+//
+//
+//stDate GetSystemDate() {
+//	stDate Date;
+//
+//	time_t t = time(0);
+//	tm* now = localtime(&t);
+//
+//
+//	Date.Year = now->tm_year + 1900;
+//	Date.Month = now->tm_mon + 1;;
+//	Date.Day = now->tm_mday;
+//
+//
+//	return Date;
+//
+//
 //
 //}
 //
-//void problem17() {
+//
+//
+//
+//
+//
+//void problem18() {
+//	cout << "\nPlease Enter Your Date of Birth:\n";
 //
 //	stDate Date1 = ReadFullDate();
-//	stDate Date2 = ReadFullDate();
+//	stDate Date2 = GetSystemDate();
 //
 //
-//	cout << "\nDiffrence is: "
-//		<< GetDifferenceInDays(Date1, Date2) << " Day(s).";
-//	cout << "\nDiffrence (Including End Day) is: "
+//	cout << "\nYour Age is : "
 //		<< GetDifferenceInDays(Date1, Date2, true) << " Day(s).";
-//	
-//
 //}
